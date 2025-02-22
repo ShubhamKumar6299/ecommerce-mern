@@ -8,7 +8,7 @@ const Cart = () => {
     // Fetch Cart Data
     const fetchCart = async () => {
         try {
-            const response = await fetch(`http://localhost:8082/verse/cart`, {
+            const response = await fetch(`https://ecommerce-mern-backend-athn.onrender.com/verse/cart`, {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',
@@ -30,7 +30,7 @@ const Cart = () => {
     // Update Product Quantity
     const updateQuantity = async (productId, newQuantity) => {
         try {
-            const response = await fetch(`http://localhost:8082/verse/cart`, {
+            const response = await fetch(`https://ecommerce-mern-backend-athn.onrender.com/verse/cart`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json',
@@ -55,7 +55,7 @@ const Cart = () => {
    
     const removeitem = async (productId) => {
         try {
-            const response = await fetch(`http://localhost:8082/verse/cart`, {
+            const response = await fetch(`https://ecommerce-mern-backend-athn.onrender.com/verse/cart`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json',
