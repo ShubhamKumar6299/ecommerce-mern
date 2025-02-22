@@ -10,7 +10,7 @@ const SignUp = () => {
     const fetchingData = async(e)=>{
         e.preventDefault();
         try{
-            const response=await fetch(`http://localhost:8082/verse/auth/register`,{
+            const response=await fetch(`https://ecommerce-mern-backend-athn.onrender.com/verse/auth/register`,{
                 method:'POST',
                 headers:{
                     'Content-Type': 'application/json',
