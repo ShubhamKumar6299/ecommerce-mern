@@ -11,7 +11,7 @@ const Checkout = () => {
     const handleCheckout = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch(`http://localhost:8082/verse/checkout`, {
+            const response = await fetch(`https://ecommerce-mern-backend-athn.onrender.com/verse/checkout`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
